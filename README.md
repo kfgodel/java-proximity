@@ -1,2 +1,2 @@
 # java-proximity
-Java project to abtract proxy creation from actual proxying framework
+Java project to abstract proxy creation from actual proxying framework
