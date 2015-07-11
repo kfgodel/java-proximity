@@ -13,8 +13,17 @@ import java.util.List;
  */
 public abstract class InvocationSupport implements MethodInvocation {
 
+    private List<Object> argumentList;
+
     @Override
     public List<Object> getArgumentList() {
+        if(argumentList == null){
+            argumentList = createArgumentList();
+        }
+        return argumentList;
+    }
+
+    private List<Object> createArgumentList() {
         Object[] actualArguments = getArguments();
         if(actualArguments == null || actualArguments.length == 0){
             return Collections.emptyList();

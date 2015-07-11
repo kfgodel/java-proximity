@@ -73,7 +73,7 @@ public class ProximityShowcaseTest extends JavaSpec<ProximityTestContext> {
                     assertThat(invokedMethod.getName()).isEqualTo("apply");
                 });
 
-                it("know the actual arguments",()->{
+                it("knows the actual arguments",()->{
                     List<Object> argumentList = context().invocation().getArgumentList();
 
                     assertThat(argumentList).isEqualTo(Lists.newArrayList("passed argument"));
