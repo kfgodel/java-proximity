@@ -7,7 +7,6 @@
     <groupId>ar.com.kfgodel</groupId>
     <artifactId>root-pom</artifactId>
     <version>0.1-SNAPSHOT</version>
-    <relativePath>https://raw.githubusercontent.com/kfgodel/kfgodel-pom/master/pom.xml</relativePath>
   </parent>
 
   <artifactId>java-proximity</artifactId>
@@ -19,12 +18,6 @@
 
   <repositories>
     <repository>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <updatePolicy>always</updatePolicy>
-      </snapshots>
       <id>kfgodel_mosquito</id>
       <name>Repo Mosquito</name>
       <url>http://kfgodel.info:8081/nexus/content/groups/public/</url>
