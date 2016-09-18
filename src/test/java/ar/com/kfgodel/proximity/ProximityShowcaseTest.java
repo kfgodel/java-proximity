@@ -2,7 +2,7 @@ package ar.com.kfgodel.proximity;
 
 import ar.com.dgarcia.javaspec.api.JavaSpec;
 import ar.com.dgarcia.javaspec.api.JavaSpecRunner;
-import ar.com.dgarcia.javaspec.api.Variable;
+import ar.com.dgarcia.javaspec.api.variable.Variable;
 import ar.com.kfgodel.proximity.api.MethodInvocation;
 import ar.com.kfgodel.proximity.api.ProxyHandler;
 import ar.com.kfgodel.proximity.impl.cglib.CglibProxier;

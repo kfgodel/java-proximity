@@ -1,6 +1,6 @@
 package ar.com.kfgodel.proximity;
 
-import ar.com.dgarcia.javaspec.api.TestContext;
+import ar.com.dgarcia.javaspec.api.contexts.TestContext;
 import ar.com.kfgodel.proximity.api.MethodInvocation;
 import ar.com.kfgodel.proximity.api.Proxier;
 
