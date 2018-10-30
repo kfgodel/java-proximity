@@ -4,15 +4,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
+  <artifactId>java-proximity</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
   <parent>
     <groupId>ar.com.kfgodel</groupId>
     <artifactId>java-pom</artifactId>
     <version>0.1-SNAPSHOT</version>
   </parent>
-
-  <artifactId>java-proximity</artifactId>
-  <version>0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
   <name>Java proximity</name>
   <description>Java project to abtract proxy creation from actual proxying framework</description>
@@ -33,11 +32,18 @@
 
   <dependencies>
 
+    <!-- New proxying capabilities -->
+    <dependency>
+      <groupId>net.bytebuddy</groupId>
+      <artifactId>byte-buddy</artifactId>
+      <version>1.9.2</version>
+    </dependency>
+
     <!-- Concrete classes proxying -->
     <dependency>
       <groupId>cglib</groupId>
       <artifactId>cglib</artifactId>
-      <version>3.1</version>
+      <version>3.2.9</version>
     </dependency>
 
     <!-- Rspec like testing -->

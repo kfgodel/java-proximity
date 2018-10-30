@@ -24,4 +24,14 @@ public interface MethodInvocation {
      * @return The proxy receiver
      */
     <T> T getProxyInstance();
+
+  /**
+   * Invokes the method definition from the super class of the proxied instance.<br>
+   * This allows invoking default interface definitions, or inherited definitions.<br>
+   * Note this may only be possible when using a cglib proxier
+   *
+   * @return The returned result of  the super invocation
+   * @throws ProximityException when the invocation fails
+   */
+  Object invokeSuper() throws ProximityException;
 }
