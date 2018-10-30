@@ -22,7 +22,7 @@ public class ByteBuddyProxier implements Proxier {
     Class<? extends T> proxyClass = new ByteBuddy()
       .subclass(expectedType)
       .implement(interfaceTypes)
-      .method(ElementMatchers.not(ElementMatchers.isDefaultMethod()))
+      .method(ElementMatchers.any())
       .intercept(InvocationHandlerAdapter.of(ByteBuddyInvocationHandler.create(handler)))
       .make()
       .load(expectedType.getClassLoader())

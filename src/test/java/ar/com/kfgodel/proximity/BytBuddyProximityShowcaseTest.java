@@ -38,12 +38,6 @@ public class BytBuddyProximityShowcaseTest extends JavaSpec<ProximityTestContext
         assertThat(aProxy.toString()).isEqualTo("A");
       });
 
-      it("can delegate an interface method call to its default definition", () -> {
-        ProxyHandler proxyHandler = invocation -> invocation.invokeSuper();
-        InterfaceWithDefaultMethod aProxy = context().proxier().proxyWith(proxyHandler, InterfaceWithDefaultMethod.class);
-        assertThat(aProxy.aDefaultMethod()).isEqualTo("the default value");
-      });
-
       describe("a proxy instance", () -> {
         it("uses an proxy handler to handle the method invocation", () -> {
           ProxyHandler invocationHandler = (invocation) -> 2;
