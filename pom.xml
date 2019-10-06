@@ -15,6 +15,7 @@
 
   <name>Java proximity</name>
   <description>Java project to abtract proxy creation from actual proxying framework</description>
+  <url>https://github.com/kfgodel/java-proximity</url>
 
   <repositories>
     <repository>
@@ -25,10 +26,15 @@
   </repositories>
 
   <scm>
-    <connection>scm:git:ssh://github.com/kfgodel/java-proximity.git</connection>
     <developerConnection>scm:git:ssh://github.com/kfgodel/java-proximity.git</developerConnection>
-    <url>https://github.com/kfgodel/java-proximity</url>
+    <connection>${project.scm.developerConnection}</connection>
+    <url>${project.url}</url>
   </scm>
+
+  <properties>
+    <!-- Sonar properties to prevent unintentional id changes (Reference: https://docs.sonarqube.org/latest/analysis/analysis-parameters/) -->
+    <sonar.projectKey>ar.com.kfgodel:java-proximity:master</sonar.projectKey>
+  </properties>
 
   <dependencies>
 
